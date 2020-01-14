@@ -456,12 +456,12 @@ def full_pipeline(train, test, vocabulary_length, save=True):
 if __name__ == '__main__':
 	
     # Process all datasets
-    train_pos = process_raw('IMDb/train/imdb_train_pos.txt')
-    train_neg = process_raw('IMDb/train/imdb_train_neg.txt')
-    test_pos = process_raw('IMDb/test/imdb_test_pos.txt')
-    test_neg = process_raw('IMDb/test/imdb_test_neg.txt')
-    dev_pos = process_raw('IMDb/dev/imdb_dev_pos.txt')
-    dev_neg = process_raw('IMDb/dev/imdb_dev_neg.txt')
+    train_pos = process_raw('data/train/imdb_train_pos.txt')
+    train_neg = process_raw('data/train/imdb_train_neg.txt')
+    test_pos = process_raw('data/test/imdb_test_pos.txt')
+    test_neg = process_raw('data/test/imdb_test_neg.txt')
+    dev_pos = process_raw('data/dev/imdb_dev_pos.txt')
+    dev_neg = process_raw('data/dev/imdb_dev_neg.txt')
     
     # Combine and add labels
     training = stratify_datasets(train_pos, train_neg)
